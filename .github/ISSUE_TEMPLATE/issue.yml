@@ -1,0 +1,55 @@
+name: AKIS Issue Report
+description: 提交 AKIS 相关问题与反馈
+title: "[Issue]: "
+labels:
+  - triage
+body:
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: 问题描述
+      description: 请清晰描述你遇到的问题、现象和复现步骤。
+      placeholder: 请填写详细的问题描述...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: 问题类型
+      description: 请选择问题类型（必选）
+      options:
+        - BUG
+        - Advancement
+        - Security Vulnerability
+        - Question
+    validations:
+      required: true
+
+  - type: input
+    id: akis_account
+    attributes:
+      label: AKIS账号和ID
+      description: 可选，便于快速定位问题。
+      placeholder: 例如：账号 xxx，ID 123456
+    validations:
+      required: false
+
+  - type: textarea
+    id: browser_logs
+    attributes:
+      label: 浏览器日志
+      description: 可选。若问题类型为 BUG，请尽量提供浏览器控制台日志（Console）。
+      placeholder: 请粘贴日志内容...
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 其他背景信息
+      description: 可选，补充环境信息、截图、期望结果等。
+      placeholder: 请填写其他相关背景信息...
+    validations:
+      required: false
