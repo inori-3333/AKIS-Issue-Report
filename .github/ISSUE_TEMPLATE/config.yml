@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 查看已有 Issue
-    url: https://github.com/10272/AKIS-Issue-Report/issues
-    about: 在提交新 Issue 之前，请先搜索是否已有类似问题。
+  - name: View existing issues
+    url: https://github.com/inori-3333/AKIS-Issue-Report/issues
+    about: Please search for existing issues before submitting a new one.
