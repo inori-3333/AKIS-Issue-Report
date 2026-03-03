@@ -51,7 +51,7 @@ body:
     id: browser-logs
     attributes:
       label: 浏览器日志
-      description: 请提供浏览器控制台日志（按 F12 → Console）
+      description: 可选 - 请提供浏览器控制台日志（按 F12 → Console）
       placeholder: |
         请粘贴浏览器控制台的错误日志，包含：
         - 错误信息
