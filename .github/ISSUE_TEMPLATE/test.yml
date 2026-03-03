@@ -1,0 +1,10 @@
+name: Test Form
+description: This is a test form
+title: "Test: "
+body:
+  - type: input
+    id: test-field
+    attributes:
+      label: Test Field
+    validations:
+      required: true
