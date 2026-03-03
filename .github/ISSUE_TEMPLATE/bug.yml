@@ -2,7 +2,7 @@ name: BUG
 description: 提交 AKIS 缺陷问题（含可选浏览器日志）
 title: "[BUG]: "
 labels:
-  - BUG
+  - bug
   - triage
 body:
   - type: textarea
