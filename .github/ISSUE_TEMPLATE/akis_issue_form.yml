@@ -1,0 +1,75 @@
+name: AKIS Issue Report
+description: Submit an issue for AKIS System
+title: "[Issue]: "
+body:
+  - type: input
+    id: issue-title
+    attributes:
+      label: 标题
+      description: 请简要描述此 Issue 的核心内容
+      placeholder: 例如：登录页面无法加载
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 问题类型
+      description: 请选择 Issue 的类型
+      options:
+        - BUG
+        - Advancement
+        - Security Vulnerability
+        - Question
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请详细描述您遇到的问题
+      placeholder: |
+        请详细描述：
+        1. 发生了什么？
+        2. 您期望发生什么？
+        3. 如何重现此问题？
+    validations:
+      required: true
+
+  - type: input
+    id: akis-account
+    attributes:
+      label: AKIS 账号和 ID
+      description: 可选 - 如果您的 Issue 与特定账号相关，请提供 AKIS 账号和 ID
+      placeholder: 例如：username (ID: 12345)
+    validations:
+      required: false
+
+  - type: textarea
+    id: browser-logs
+    attributes:
+      label: 浏览器日志
+      description: 请提供浏览器控制台日志（按 F12 → Console）
+      placeholder: |
+        请粘贴浏览器控制台的错误日志，包含：
+        - 错误信息
+        - 堆栈跟踪（如果有）
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 其他背景信息
+      description: 可选 - 任何其他有助于理解此问题的背景信息
+      placeholder: |
+        例如：
+        - 操作系统和版本
+        - 浏览器和版本
+        - 相关截图链接
+        - 之前是否正常工作
+    validations:
+      required: false
