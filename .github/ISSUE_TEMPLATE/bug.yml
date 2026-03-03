@@ -1,7 +1,8 @@
-name: AKIS Issue Report
-description: 提交 AKIS 相关问题与反馈
-title: "[Issue]: "
+name: BUG
+description: 提交 AKIS 缺陷问题（含可选浏览器日志）
+title: "[BUG]: "
 labels:
+  - BUG
   - triage
 body:
   - type: textarea
@@ -10,19 +11,6 @@ body:
       label: 问题描述
       description: 请清晰描述你遇到的问题、现象和复现步骤。
       placeholder: 请填写详细的问题描述...
-    validations:
-      required: true
-
-  - type: dropdown
-    id: issue_type
-    attributes:
-      label: 问题类型
-      description: 请选择问题类型（必选）
-      options:
-        - BUG
-        - Advancement
-        - Security Vulnerability
-        - Question
     validations:
       required: true
 
@@ -39,7 +27,7 @@ body:
     id: browser_logs
     attributes:
       label: 浏览器日志
-      description: 可选。若问题类型为 BUG，请尽量提供浏览器控制台日志（Console）。
+      description: 可选，建议粘贴浏览器控制台日志（Console）。
       placeholder: 请粘贴日志内容...
       render: shell
     validations:
