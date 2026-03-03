@@ -1,8 +1,6 @@
 name: Issue Report
 description: Submit an issue report
-title: "[Issue] "
-labels: []
-projects: []
+title: "[Issue]: "
 body:
   - type: markdown
     attributes:
