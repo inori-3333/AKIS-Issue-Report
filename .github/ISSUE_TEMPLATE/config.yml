@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: View existing issues
-    url: https://github.com/inori-3333/AKIS-Issue-Report/issues
-    about: Please search for existing issues before submitting a new one.
+  - name: AKIS Discussion
+    url: https://github.com/inori-3333/AKIS-Issue-Report/discussions
+    about: Please ask and answer general questions here.
+  - name: AKIS Official Website
+    url: https://akis.example.com
+    about: Visit the official AKIS website for more information.
