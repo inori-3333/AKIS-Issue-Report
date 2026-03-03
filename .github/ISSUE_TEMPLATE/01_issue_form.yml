@@ -57,8 +57,7 @@ body:
     attributes:
       label: Browser Logs
       description: Optional - If issue type is BUG, provide browser console logs (F12 → Console)
-      placeholder: |
-        Paste browser console logs here
+      placeholder: Paste browser console logs here
       render: shell
     validations:
       required: false
@@ -68,7 +67,6 @@ body:
     attributes:
       label: Additional Context
       description: Optional - Any other background information
-      placeholder: |
-        e.g. OS, browser version, etc.
+      placeholder: e.g. OS, browser version, etc.
     validations:
       required: false
