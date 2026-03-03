@@ -1,5 +1,5 @@
-name: Issue 报告
- description: 提交一个 Issue 报告
+name: Issue Report
+ description: Submit an issue report
  title: "[Issue] "
  labels: []
  projects: []
@@ -7,22 +7,22 @@ name: Issue 报告
    - type: markdown
      attributes:
        value: |
-         感谢您提交 Issue！请填写以下信息，以便我们更好地理解和解决问题。
+         Thank you for submitting an issue! Please fill out the information below.
 
    - type: input
-     id: title
+     id: title_input
      attributes:
-       label: 标题
-       description: 请简要描述此 Issue 的核心内容
-       placeholder: 例如：登录页面无法加载
+       label: Title
+       description: Brief summary of the issue
+       placeholder: e.g., Login page fails to load
      validations:
        required: true
 
    - type: dropdown
      id: issue_type
      attributes:
-       label: 问题类型
-       description: 请选择 Issue 的类型
+       label: Issue Type
+       description: Select the type of issue
        options:
          - BUG
          - Advancement
@@ -35,34 +35,34 @@ name: Issue 报告
    - type: textarea
      id: description
      attributes:
-       label: 问题描述
-       description: 请详细描述您遇到的问题
+       label: Description
+       description: Detailed description of the issue
        placeholder: |
-         请详细描述：
-         1. 发生了什么？
-         2. 您期望发生什么？
-         3. 如何重现此问题？
+         Please describe:
+         1. What happened?
+         2. What did you expect to happen?
+         3. How to reproduce?
      validations:
        required: true
 
    - type: input
      id: akis_account
      attributes:
-       label: AKIS 账号和 ID
-       description: 可选 - 如果您的 Issue 与特定账号相关，请提供 AKIS 账号和 ID
-       placeholder: 例如：username (ID: 12345)
+       label: AKIS Account and ID
+       description: Optional - Provide your AKIS account and ID if relevant
+       placeholder: e.g., username (ID: 12345)
      validations:
        required: false
 
    - type: textarea
      id: browser_logs
      attributes:
-       label: 浏览器日志
-       description: 可选 - 如果问题类型为 BUG，请提供浏览器控制台日志（按 F12 → Console）
+       label: Browser Logs
+       description: Optional - If issue type is BUG, provide browser console logs (F12 → Console)
        placeholder: |
-         请粘贴浏览器控制台的错误日志，包含：
-         - 错误信息
-         - 堆栈跟踪（如果有）
+         Paste browser console logs here:
+         - Error messages
+         - Stack traces (if any)
        render: shell
      validations:
        required: false
@@ -70,13 +70,13 @@ name: Issue 报告
    - type: textarea
      id: additional_context
      attributes:
-       label: 其他背景信息
-       description: 可选 - 任何其他有助于理解此问题的背景信息
+       label: Additional Context
+       description: Optional - Any other background information
        placeholder: |
-         例如：
-         - 操作系统和版本
-         - 浏览器和版本
-         - 相关截图链接
-         - 之前是否正常工作
+         e.g.:
+         - OS and version
+         - Browser and version
+         - Screenshot links
+         - Was it working before?
      validations:
        required: false
